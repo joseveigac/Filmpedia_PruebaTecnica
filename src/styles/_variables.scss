@@ -1,0 +1,24 @@
+/* ========= _variables.scss ========= */
+
+/* Mockup Colors */
+$color-bg:        #0b0b0f;   // Page Background
+$color-surface:   #151521;   // Card Background
+$color-text:      #e6e6f0;   // Main Text
+$color-muted:     #9aa0aa;   // Secondary Text
+$color-border:    #232334;   // Smooth Outline
+
+/* UI Tokens */
+$radius-md:       12px;      // Radio por defecto para tarjetas y pills
+$shadow-card:     0 10px 24px rgba(0,0,0,.25);
+
+/* Tipografía */
+$font-size-base:  16px;      // Tamaño base
+$line-height:     1.5;       // Altura de línea legible
+
+/* Zonas de medición (espaciados de ejemplo) */
+$space-2:         .5rem;     // 8px
+$space-3:         .75rem;    // 12px
+$space-4:         1rem;      // 16px
+
+/* Helper: transición suave estándar */
+$transition-fast: .2s ease;
