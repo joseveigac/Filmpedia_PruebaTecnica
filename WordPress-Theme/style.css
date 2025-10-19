@@ -1,0 +1,12 @@
+/*
+Theme Name: Tailwind Theme
+Author: Jose Veiga
+Version: 1.0
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffafa
+}
