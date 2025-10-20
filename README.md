@@ -8,32 +8,56 @@ Este proyecto consiste en el desarrollo de una página de recomendaciones, maque
 
 | Tecnología | Uso |
 |------------|-----|
-| **WordPress** | CMS base para la gestión del contenido |
-| **PHP** | Plantillas y lógica del tema |
-| **TailwindCSS (CDN)** | Estilado del diseño de forma rápida y fiable |
-| **HTML / CSS / JS** | Maquetación y elementos visuales |
-| **WordPress Studio (local)** | Entorno de ejecución en local para las pruebas |
+| **Vite** | Entorno de desarrollo frontend para la maquetación |
+| **TailwindCSS** | Estilos basados en utilidades |
+| **PHP** | Plantillas Wordpress y lógica de ACF |
+| **WordPress Studio** | Vista previa funcional |
+| **HTML / CSS / JS / PHP** | Estructura y plantillas |
+| **VSCode** | IDE recomendado |
 
+## 🌍 Vista Previa Online (WordPress Studio)
+
+**URL:** https://jveigacaminos-gupqm-studio.wp.build/
+
+Esta es la versión funcional del proyecto renderizada en WordPress.  
+El evaluador puede navegar y revisar el resultado final sin necesidad de instalar nada en local.
+
+## 📌 Contenido del repositorio
+/
+├── WordPress-Theme/ # Tema WordPress (para consulta del código .php)
+│ ├── assets/
+│ ├── header.php
+│ ├── front-page.php
+│ ├── functions.php
+│ └── style.css
+├── ViteProject/ # Proyecto principal para desarrollo frontend
+├── README.md
+└── (otros archivos de soporte)
 
 ## 🛠️ Instrucciones para ejecutar el proyecto
 
-### ✅ Opción recomendada (rápida)
+Este es el entorno utilizado para maquetar y desarrollar.
 
-Vista Previa mediante WordPress Studio: https://jveigacaminos-gupqm-studio.wp.build/ (disponible  durante 7 días)
+### 📌 Requisitos previos
+- Node.js 18+
+- npm
+- Visual Studio Code (recomendado)
 
-1. Instalar WordPress en local (LocalWP / MAMP / XAMPP / WordPress Studio).
-2. Copiar la carpeta `WordPress-Theme` dentro de la instalación local de WordPress:
-  - ..\wp-content\themes\
-3. Ir al panel de WordPress → **Apariencia → Temas**
-4. Activar el tema **WordPress Theme”**
-6. Recargar el sitio → el diseño se mostrará con el diseño aplicado
----
+### 📌 Instalación
+```bash
+cd ViteProject
+npm install
+```
+
+### Ejecutar entorno de desarrollo
+npm run dev
 
 ## 🧾 Notas y aprendizaje
 
 - El mayor reto fue integrar el diseño con WordPress manteniendo una estructura limpia.
 - Se probó inicialmente Docker, pero para la entrega se priorizó una solución más rápida y estable para el evaluador.
 - El tema está preparado para poder ampliarse fácilmente con ACF u otras funcionalidades si se continúa el desarrollo.
+- Para añadir Docker, se requeriria de docker.compose.yml con la instalación de dependencias, wordpress y funcionalidad para ACF.
 
 ---
 
